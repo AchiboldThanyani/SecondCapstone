@@ -25,7 +25,7 @@
     margin: auto;
     padding: 0 30px;
   }
-/* ===============Navigation */
+
 .navbar{
     background: rgba(27, 27, 27, 0.838);
     position: fixed;
@@ -37,6 +37,7 @@
 .navbar.sticky{
     background: rgba(27, 27, 27, 0.838);
     padding: 10px 0;
+    /* backdrop-filter: blur(4px); */
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
 .navbar .content{
@@ -56,15 +57,17 @@
 .menu-list li{
     list-style: none;
 }
-.menu-list li a{
+.menu-list li a {
     color: #f5deb3;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
-.menu-list li a:hover{
+.menu-list li a:hover {
+    transform: scale(1.2);
     color: #007bff;
 }
 .icon{
@@ -78,7 +81,7 @@
     right: 30px;
     top: 20px;
 }
-  /* ===============/Navigation */
+
 body {
     /* background-color:black; */
 }
@@ -92,27 +95,27 @@ ul#menu {
     padding: 0;
 }
 
-    ul#menu li {
-        display: inline;
-    }
+ul#menu li {
+    display: inline;
+}
 
-        ul#menu li a {
-            text-decoration: none;
-            color: dodgerblue;
-            margin-right: 2em;
-            padding: 1em;
-            transition: color 0.3s ease, font-size 0.3s ease;
-            font-size:2em;
-        }
+ul#menu li a {
+    text-decoration: none;
+    color: dodgerblue;
+    margin-right: 2em;
+    padding: 1em;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    font-size:2em;
+}
 
-        ul#menu li:last-child {
-            margin-right: 0;
-        }
+ul#menu li:last-child {
+    margin-right: 0;
+}
 
-        ul#menu li a:hover {
-            color: black;
-            font-size: 1.2em; /* Increase font size on hover */
-        }
+ul#menu li a:hover {
+    color: black;
+    font-size: 1.2em; /* Increase font size on hover */
+}
 
 
 .content-section {
@@ -202,7 +205,7 @@ button {
     background-color: #4169E1;
 }
 .page-set{
-    padding-top: 100px;
+    padding-top: 120px;
 }
 #page {
     width: 100%;
