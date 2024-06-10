@@ -808,7 +808,7 @@ th {
 
 .special-paragraph {
     font-style:normal;
-    font-size: xx-large;
+    /* font-size: xx-large; */
 }
 .special-paragraph2 {
     font-style: oblique;
