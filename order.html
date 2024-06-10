@@ -37,80 +37,82 @@
         </nav>
     </section>
     <section id="page" class="page-set">
-        <div class="container">
-            <div>
-            <h2>Menu</h2>
-            </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <div class="menu-item">
-                <img src="Images/pizza.jpg" alt="Pizza" class="menu-item-image">
-                <h3>Pizza</h3>
-                <p>Delicious pizza with your choice of toppings.</p>
-                <p>Price: $10</p>
-                <div class="quantity-selector">
-                    <label for="pizza-quantity">Quantity:</label>
-                    <input type="number" id="pizza-quantity" min="1" value="1">
-                    <button onclick="addToCart('Pizza', 10, document.getElementById('pizza-quantity').value)">Add to Cart</button>
+        <div class="content">
+            <div class="container">
+                <div>
+                <!-- <h2>Menu</h2> -->
                 </div>
-            </div>
-
-            <div class="menu-item">
-                <img src="Images/burger.jpg" alt="Burger" class="menu-item-image">
-                <h3>Burger</h3>
-                <p>Juicy burger with fries on the side.</p>
-                <p>Price: $8</p>
-                <div class="quantity-selector">
-                    <label for="burger-quantity">Quantity:</label>
-                    <input type="number" id="burger-quantity" min="1" value="1">
-                    <button onclick="addToCart('Burger', 8, document.getElementById('burger-quantity').value)">Add to Cart</button>
+                <br />
+                <br />
+                <br />
+                <br />
+                <div class="menu-item">
+                    <img src="Images/pizza.jpg" alt="Pizza" class="menu-item-image">
+                    <h3>Pizza</h3>
+                    <p>Delicious pizza with your choice of toppings.</p>
+                    <p>Price: $10</p>
+                    <div class="quantity-selector">
+                        <label for="pizza-quantity">Quantity:</label>
+                        <input type="number" id="pizza-quantity" min="1" value="1">
+                        <button onclick="addToCart('Pizza', 10, document.getElementById('pizza-quantity').value)">Add to Cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="menu-item">
-                <img src="Images/sushi.jpg" alt="Sushi" class="menu-item-image">
-                <h3>Sushi</h3>
-                <p>Assortment of fresh sushi rolls.</p>
-                <p>Price: $15</p>
-                <div class="quantity-selector">
-                    <label for="sushi-quantity">Quantity:</label>
-                    <input type="number" id="sushi-quantity" min="1" value="1">
-                    <button onclick="addToCart('Sushi', 15, document.getElementById('sushi-quantity').value)">Add to Cart</button>
+    
+                <div class="menu-item">
+                    <img src="Images/burger.jpg" alt="Burger" class="menu-item-image">
+                    <h3>Burger</h3>
+                    <p>Juicy burger with fries on the side.</p>
+                    <p>Price: $8</p>
+                    <div class="quantity-selector">
+                        <label for="burger-quantity">Quantity:</label>
+                        <input type="number" id="burger-quantity" min="1" value="1">
+                        <button onclick="addToCart('Burger', 8, document.getElementById('burger-quantity').value)">Add to Cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="menu-item">
-                <img src="Images/salad2.jpg" alt="Salad" class="menu-item-image">
-                <h3>Salad</h3>
-                <p>Fresh garden salad with your choice of dressing.</p>
-                <p>Price: $6</p>
-                <div class="quantity-selector">
-                    <label for="salad-quantity">Quantity:</label>
-                    <input type="number" id="salad-quantity" min="1" value="1">
-                    <button onclick="addToCart('Salad', 6, document.getElementById('salad-quantity').value)">Add to Cart</button>
+                <div class="menu-item">
+                    <img src="Images/sushi.jpg" alt="Sushi" class="menu-item-image">
+                    <h3>Sushi</h3>
+                    <p>Assortment of fresh sushi rolls.</p>
+                    <p>Price: $15</p>
+                    <div class="quantity-selector">
+                        <label for="sushi-quantity">Quantity:</label>
+                        <input type="number" id="sushi-quantity" min="1" value="1">
+                        <button onclick="addToCart('Sushi', 15, document.getElementById('sushi-quantity').value)">Add to Cart</button>
+                    </div>
                 </div>
-            </div>
-            <div class="menu-item">
-                <img src="Images/pasta2.jpg" alt="Pasta" class="menu-item-image">
-                <h3>Pasta</h3>
-                <p>Homemade pasta with your choice of sauce.</p>
-                <p>Price: $12</p>
-                <div class="quantity-selector">
-                    <label for="pasta-quantity">Quantity:</label>
-                    <input type="number" id="pasta-quantity" min="1" value="1">
-                    <button onclick="addToCart('Pasta', 12, document.getElementById('pasta-quantity').value)">Add to Cart</button>
+                <div class="menu-item">
+                    <img src="Images/salad2.jpg" alt="Salad" class="menu-item-image">
+                    <h3>Salad</h3>
+                    <p>Fresh garden salad with your choice of dressing.</p>
+                    <p>Price: $6</p>
+                    <div class="quantity-selector">
+                        <label for="salad-quantity">Quantity:</label>
+                        <input type="number" id="salad-quantity" min="1" value="1">
+                        <button onclick="addToCart('Salad', 6, document.getElementById('salad-quantity').value)">Add to Cart</button>
+                    </div>
                 </div>
+                <div class="menu-item">
+                    <img src="Images/pasta2.jpg" alt="Pasta" class="menu-item-image">
+                    <h3>Pasta</h3>
+                    <p>Homemade pasta with your choice of sauce.</p>
+                    <p>Price: $12</p>
+                    <div class="quantity-selector">
+                        <label for="pasta-quantity">Quantity:</label>
+                        <input type="number" id="pasta-quantity" min="1" value="1">
+                        <button onclick="addToCart('Pasta', 12, document.getElementById('pasta-quantity').value)">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <br />
+                <br />
+    
+                <h2>Cart</h2>
+                <div class="cart" id="cart">
+                    <p>Add some food items to your cart.</p>
+                </div>
+                <p class="total-price">Total Price: $<span id="cart-total">0.00</span></p>
+                <button onclick="clearCart()">Clear Cart</button>
             </div>
-
-            <br />
-            <br />
-
-            <h2>Cart</h2>
-            <div class="cart" id="cart">
-                <p>Add some food items to your cart.</p>
-            </div>
-            <p class="total-price">Total Price: $<span id="cart-total">0.00</span></p>
-            <button onclick="clearCart()">Clear Cart</button>
         </div>
 
         <footer class="footer">
