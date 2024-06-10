@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+
+</head>
+<body>
+    <section id="page">
+        <header>
+            <h1>Make A Reservation</h1>
+            <img src="companylogo.PNG" />
+            <div></div>
+        </header>
+        <nav>
+            <ul id="menu">
+                <li>  <a href="home.html">Home</a> </li>
+                <li>  <a href="aboutus.html">About Us</a></li>
+                <li> <a class="active"href="booking.html">Reservations</a></li>
+                <li> <a href="order.html">Online Orders</a></li>
+                <li>  <a href="menus.html">Menus</a></li>
+                <li>   <a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section id="booking-form">
+            <form action="mailto:nidiamarirer@gmail.com">
+                <p>*****************************************************************</p>
+                <fieldset id="booking-information">
+
+                    <legend>Booking Information</legend>
+                    <p>*****************************************************************</p>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required min="<?php echo date('Y-m-d'); ?>">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time"><br><br>
+                    <label for="party-size">Number of Guests:</label>
+                    <select id="party-size" name="party-size" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select><br><br>
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests"></textarea><br><br>
+                </fieldset>
+                <p>*****************************************************************</p>
+                <fieldset id="personal-details">
+
+                    <legend>Personal Details</legend>
+                    <p>*****************************************************************</p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                </fieldset>
+                <button type="reset" onclick="clearForm()">Clear Form</button>
+                <button type="submit" onclick="makeReservation"> Make Reservation</button>
+
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                <p>&copy; 2023 The Modern Restaurant. All rights reserved.</p>
+
+                <h2>Opening Times:</h2>
+                <p>  Monday – Saturday 11:00 – 22:00</p>
+                <p>  Sunday 12:00 – 20:00</p>
+
+                <p>1 Gomery Avenue, Summerstrand, Port Elizabeth</p>
+
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/your_instagram_username" target="_blank" class="clr"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://www.facebook.com/your_facebook_page" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.twitter.com/your_twitter_username" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://wa.me/0640794912?text=Hello,%20I%20would%20like%20to%20contact%20TheModern%20Restaurant." target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                <a href="mailto:nidiamarirer@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
+                <a href="tel:+27640794912"><i class="bx bxl-phone"></i></a>
+            </div>
+
+        </footer>
+    </section>
+</body>
+</html>
