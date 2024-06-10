@@ -10,29 +10,39 @@
 
 </head>
 <body>
-    <section id="page">
-        <header>
-            <h1>Make A Reservation</h1>
-            <img src="companylogo.PNG" />
-            <div></div>
-        </header>
-        <nav>
-            <ul id="menu">
-                <li>  <a href="home.html">Home</a> </li>
-                <li>  <a href="aboutus.html">About Us</a></li>
-                <li> <a class="active"href="booking.html">Reservations</a></li>
-                <li> <a href="order.html">Online Orders</a></li>
-                <li>  <a href="menus.html">Menus</a></li>
-                <li>   <a href="contactus.html">Contact Us</a></li>
-            </ul>
+    <section>
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="Images/Home/cutlery.png" alt="Logo" width="100px" />
+                    </a>
+                </div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li>  <a class="active" href="home.html">Home</a> </li>
+                    <li>   <a href="aboutus.html">About Us</a></li>
+                    <li> <a href="booking.html">Reservations</a></li>
+                    <li> <a href="order.html">Online Orders</a></li>
+                    <li>  <a href="menus.html">Menus</a></li>
+                    <li>   <a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>              
         </nav>
+    </section>
+    <section id="page">
         <section id="booking-form">
             <form action="mailto:nidiamarirer@gmail.com">
-                <p>*****************************************************************</p>
+                <p>******************************</p>
                 <fieldset id="booking-information">
 
                     <legend>Booking Information</legend>
-                    <p>*****************************************************************</p>
+                    <p>*********************************</p>
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="date" required min="<?php echo date('Y-m-d'); ?>">
                     <label for="time">Time:</label>
